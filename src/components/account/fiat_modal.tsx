@@ -86,7 +86,7 @@ export const FiatOnRampModal: React.FC<Props> = props => {
                 setFiatLink(fiat_link);
             }
             description = `Disclaimer  <br />
-            Veridex now enables easy purchase of Ether using ApplePay, through Wyre!`;
+            Belifex now enables easy purchase of Ether using ApplePay, through Wyre!`;
             // window.open(fiat_link);
             break;
         case 'DEBIT_CARD':
@@ -95,7 +95,7 @@ export const FiatOnRampModal: React.FC<Props> = props => {
                 setFiatLink(fiat_link);
             }
             description = `Disclaimer  <br />
-            Veridex now enables easy purchase of Ether using Mastercad and Visa cards, through Wyre!`;
+            Belifex now enables easy purchase of Ether using Mastercad and Visa cards, through Wyre!`;
             break;
         case 'CREDIT_CARD':
             fiat_link = `https://business.coindirect.com/buy?merchantId=${COINDIRECT_MERCHANT_ID}&to=eth&address=${ethAccount}`;
@@ -103,7 +103,7 @@ export const FiatOnRampModal: React.FC<Props> = props => {
                 setFiatLink(fiat_link);
             }
             description = `Disclaimer  <br />
-    Veridex now enables easy purchase of Ether using credit & debit cards, through Coindirect! <br />
+    Belifex now enables easy purchase of Ether using credit & debit cards, through Coindirect! <br />
     Once payment is completed, you can check your payment status on Coindirect and deposit history in your ethereum wallet.<br />
     If you have any questions, please contact: support@coindirect.com`;
             break;
@@ -129,7 +129,7 @@ export const FiatOnRampModal: React.FC<Props> = props => {
                 }
             }
             description = `Disclaimer  <br />
-        Veridex now enables easy purchase of Ether using credit & debit cards, through Moonpay! <br />
+        Belifex now enables easy purchase of Ether using credit & debit cards, through Moonpay! <br />
         Once payment is completed, you can check your payment status on Moonpay and deposit history in your ethereum wallet.<br />`;
             break;
 
