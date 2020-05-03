@@ -4,7 +4,7 @@ import { fontSizes, Theme, ThemeProperties } from './commons';
 
 const modalThemeStyle: Styles = {
     content: {
-        backgroundColor: '#fff',
+        backgroundColor: '#270c3d',
         borderColor: '#dedede',
         bottom: 'auto',
         display: 'flex',
@@ -29,11 +29,11 @@ const modalThemeStyle: Styles = {
 };
 
 const lightThemeColors: ThemeProperties = {
-    background: '#f4f3f4',
+    background: '#623389',
     backgroundERC721: '#F9FAFC',
     borderColor: '#dedede',
     boxShadow: '0 10px 10px rgba(0, 0, 0, 0.1)',
-    buttonBuyBackgroundColor: '#3CB34F',
+    buttonBuyBackgroundColor: '#65b33c',
     buttonCollectibleSellBackgroundColor: '#00AE99',
     buttonConvertBackgroundColor: '#fff',
     buttonConvertBorderColor: '#dedede',
@@ -41,8 +41,8 @@ const lightThemeColors: ThemeProperties = {
     buttonErrorBackgroundColor: '#FF6534',
     buttonPrimaryBackgroundColor: '#002979',
     buttonQuaternaryBackgroundColor: '#00AE99',
-    buttonSecondaryBackgroundColor: '#474747',
-    buttonSellBackgroundColor: '#FF6534',
+    buttonSecondaryBackgroundColor: '#65b33c',
+    buttonSellBackgroundColor: '#e70002',
     buttonTertiaryBackgroundColor: '#F6851B',
     buttonTextColor: '#fff',
     buttonPortisBackgroundColor: '#6db2d8',
@@ -72,7 +72,7 @@ const lightThemeColors: ThemeProperties = {
     ethSliderThumbBorderColor: 'rgba(0, 0, 0, 0.142)',
     ethSliderThumbColor: '#fff',
     gray: '#808080',
-    green: '#3CB34F',
+    green: '#65b33c',
     iconLockedColor: '#000',
     iconUnlockedColor: '#C4C4C4',
     inactiveTabBackgroundColor: '#f9f9f9',
@@ -93,8 +93,8 @@ const lightThemeColors: ThemeProperties = {
     notificationIconColor: '#474747',
     notificationsBadgeColor: '#ff6534',
     numberDecimalsColor: '#dedede',
-    red: '#FF6534',
-    rowActive: '#FBFDFF',
+    red: '#e70002',
+    rowActive: '#ededed',
     rowOrderActive: '#dedede',
     simplifiedTextBoxColor: '#F9F9F9',
     stepsProgressCheckMarkColor: '#fff',
@@ -117,7 +117,7 @@ const lightThemeColors: ThemeProperties = {
     thFontSize: '12px',
     tooltipBackgroundColor: '#222',
     tooltipTextColor: '#fff',
-    topbarBackgroundColor: '#fff',
+    topbarBackgroundColor: '#623389',
     topbarBorderColor: '#dedede',
     topbarSeparatorColor: '#dedede',
     ...fontSizes,
