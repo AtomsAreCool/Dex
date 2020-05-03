@@ -1,15 +1,15 @@
 {
     "general": {
-        "title": "VeriDex",
-        "icon": "assets/icons/vsf.svg",
+        "title": "Belifex Decentralized Exchange",
+        "icon": "https://belifex.com/assets/android-icon-48x48.png",
         "social": {
-            "telegram_url": "https://t.me/VeriSafe",
-            "twitter_url": "https://twitter.com/VeriSafeProject",
-            "facebook_url": "https://www.facebook.com/VeriSafe.io/",
-            "discord_url": "https://discord.gg/cGMJemv",
-            "reddit_url": "https://reddit.com/r/verisafe",
-            "bitcointalk_url": "https://bitcointalk.org/index.php?topic=5140352",
-            "statedapps_url": "https://www.stateofthedapps.com/dapps/veridex"
+            "telegram_url": "https://t.me/belifex_official",
+            "twitter_url": "https://twitter.com/BelifexE",
+            "facebook_url": "https://www.facebook.com/Belifex.BEFX/",
+            "discord_url": "https://discord.gg/CVhZDVA",
+            "reddit_url": "https://www.reddit.com/r/Belifex/",
+            "bitcointalk_url": "https://bitcointalk.org/index.php?topic=5168580.0",
+            "statedapps_url": "https://www.stateofthedapps.com/dapps/belifex-dex"
         }
     },
     "tokens": [
@@ -17,7 +17,7 @@
             "decimals": 18,
             "symbol": "vsf",
             "name": "VeriSafe",
-            "primaryColor": "#081e6e",
+            "primaryColor": "#081E6E",
             "icon": "assets/icons/vsf.svg",
             "addresses": {
                 "1": "0xac9ce326e95f51b5005e9fe1dd8085a01f18450c",
@@ -26,7 +26,7 @@
             },
             "id": "verisafe",
             "c_id": "verisafe",
-            "displayDecimals": 0,
+            "displayDecimals": 2,
             "description": "The transparent ecossystem that crypto needs!",
             "website": "https://www.verisafe.io"
         },
@@ -43,7 +43,7 @@
                 "50": "0x0b1ba0af832d7c05fd64161e0db78e85978e8082"
             },
             "decimals": 18,
-            "displayDecimals": 3,
+            "displayDecimals": 4,
             "id": "ethereum",
             "c_id": "ethereum",
             "website": "https://weth.io",
@@ -69,85 +69,434 @@
             "description": "0x is an open protocol that enables the peer-to-peer exchange of assets on the Ethereum blockchain."
         },
         {
-            "decimals": 9,
-            "symbol": "dgx",
-            "name": "DigixDao",
-            "icon": "assets/icons/dgx.svg",
-            "primaryColor": "#E1AA3E",
+            "decimals": 8,
+            "symbol": "befx",
+            "name": "Belifex",
+            "icon": "https://belifex.com/assets/befx.png",
+            "primaryColor": "#2C80BE",
             "addresses": {
-                "1": "0xE0B7927c4aF23765Cb51314A0E0521A9645F0E2A",
-                "3": "0xc4895a5aafa2708d6bc1294e20ec839aad156b1d",
-                "4": "0xc40a46ca4bc8e6057ed571e39cf400f3f935e4d5",
-                "42": "0xA4f468c9c692eb6B4b8b06270dAe7A2CfeedcDe9",
-                "50": "0xcdb594a32b1cc3479d8746279712c39d18a07fc0"
+                "1": "0xB91C2a2b953D72f3EF890490669a0A41B0ADD5f7"
             },
-            "c_id": "digixdao",
-            "website": "https://digix.global/dgd/"
+            "c_id": "befx",
+            "website": "https://belifex.com"
         },
         {
             "decimals": 18,
             "symbol": "dai",
             "name": "Dai",
-            "icon": "assets/icons/dai.svg",
-            "primaryColor": "#DEA349",
+            "icon": "https://belifex.com/assets/dai.png",
+            "primaryColor": "#F4B731",
             "addresses": {
-                "1": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
-                "3": "0xad6d458402f60fd3bd25163575031acdce07538d",
-                "4": "0x6f2d6ff85efca691aad23d549771160a12f0a0fc",
-                "42": "0xc4375b7de8af5a38a93548eb8453a498222c4ff2",
-                "50": ""
+                "1": "0x6b175474e89094c44da98b954eedeac495271d0f"
             },
             "website": "https://makerdao.com/en/dai/",
             "description": "Dai is an asset-backed, hard currency for the 21st century.",
             "c_id": "dai"
+        },
+        {
+            "decimals": 6,
+            "symbol": "usdc",
+            "name": "USD-Coin",
+            "icon": "https://belifex.com/assets/usdc.png",
+            "primaryColor": "#2875FA",
+            "addresses": {
+                "1": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+            },
+            "website": "https://www.centre.io/",
+            "description": "USD-Coin is a stablecoin by Coinbase and Circle",
+            "c_id": "usdc"
+        },
+        {
+            "decimals": 18,
+            "symbol": "mkr",
+            "name": "Maker",
+            "icon": "https://belifex.com/assets/mkr.png",
+            "primaryColor": "#1AAB9B",
+            "addresses": {
+                "1": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
+                "3": "0x06732516acd125b6e83c127752ed5f027e1b276e",
+                "4": "0xb763e26cd6dd09d16f52dc3c60ebb77e46b03290",
+                "42": "0x7B6B10CAa9E8E9552bA72638eA5b47c25afea1f3",
+                "50": "0x34d402f14d58e001d8efbe6585051bf9706aa064"
+            },
+            "website": "https://makerdao.com/",
+            "description": "Digital currency that can be used by anyone, anywhere, anytime.",
+            "c_id": "mkr"
+        },
+        {
+            "decimals": 6,
+            "symbol": "usdt",
+            "name": "Tether USD",
+            "icon": "https://belifex.com/assets/usdt.png",
+            "primaryColor": "#26A17B",
+            "addresses": {
+                "1": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+            },
+            "website": "https://tether.to/",
+            "description": "Tether converts cash into digital currency, to anchor or tether the value to the price of national currencies like the US dollar, the Euro, and the Yen.",
+            "c_id": "usdt"
+        },
+        {
+            "decimals": 18,
+            "symbol": "bat",
+            "name": "Basic Attention Token",
+            "icon": "https://belifex.com/assets/bat.png",
+            "primaryColor": "#EBE8E8",
+            "addresses": {
+                "1": "0x0d8775f648430679a709e98d2b0cb6250d2887ef"
+            },
+            "website": "https://basicattentiontoken.org/",
+            "description": "Basic Attention Token radically improves the efficiency of digital advertising by creating a new token that can be exchanged between publishers, advertisers, and users.",
+            "c_id": "bat"
+        },
+        {
+            "decimals": 18,
+            "symbol": "muxe",
+            "name": "MUXE",
+            "icon": "https://belifex.com/assets/muxe.png",
+            "primaryColor": "#EBE8E8",
+            "addresses": {
+                "1": "0x515669d308f887Fd83a471C7764F5d084886D34D"
+            },
+            "website": "https://www.muxe.io/",
+            "description": "We strive to become a global one-stop-shop for a broad variety of niche segments in the market. With a global aim on the preparation of according to us required technology we were able to prepare several use cases, pilot setups and partnerships that have drastically impacted the growth of both MUXE B.V as its partners project goals and vision.",
+            "c_id": "muxe"
+        },
+        {
+            "decimals": 18,
+            "symbol": "link",
+            "name": "Chain.Link",
+            "icon": "https://belifex.com/assets/link.png",
+            "primaryColor": "#EBE8E8",
+            "addresses": {
+                "1": "0x514910771af9ca656af840dff83e8264ecf986ca"
+            },
+            "website": "https://chain.link/",
+            "description": "The Chainlink network provides reliable tamper-proof inputs and outputs for complex smart contracts on any blockchain.",
+            "c_id": "link"
+        },
+
+        {
+            "decimals": 18,
+            "symbol": "clo",
+            "name": "Cryptlo",
+            "icon": "https://belifex.com/assets/clo.png",
+            "primaryColor": "#EBE8E8",
+            "addresses": {
+                "1": "0xe4707Dac5f8a942F98B2181129346ef37d075A69"
+            },
+            "website": "https://cryptlodex.com/",
+            "description": "CryptloDEX is a next generation ERC20 based decentralized trading platform where you can manage your own funds. Join us and enjoy the next generation trading platform with privacy, security, low fee and one click trading experience.",
+            "c_id": "clo"
+        },
+{
+            "decimals": 18,
+            "symbol": "clog",
+            "name": "CLO Gold",
+            "icon": "https://belifex.com/assets/clog.png",
+            "primaryColor": "#2A203C",
+            "addresses": {
+                "1": "0xba36676acd9709ac84a2864f05c0a3f820aa223e"
+            },
+            "website": "https://cryptlodex.com/",
+            "description": "CryptloDEX is a next generation ERC20 based decentralized trading platform where you can manage your own funds. Join us and enjoy the next generation trading platform with privacy, security, low fee and one click trading experience.",
+            "c_id": "clog"
+        },
+        {
+            "decimals": 18,
+            "symbol": "dca",
+            "name": "Decentralize Currency Assets",
+            "icon": "https://belifex.com/assets/dca.png",
+            "primaryColor": "#C19C55",
+            "addresses": {
+                "1": "0x18aa7c90d3ae4c5bb219d0a2813f441704084625"
+            },
+            "website": "https://decentralizecurrency.net",
+            "description": "DCA serves as utility token for decentralized ecosystem,advertisement and community bartering system.",
+            "c_id": "dca"
+        },
+	{
+            "decimals": 2,
+            "symbol": "idrt",
+            "name": "Rupiah Token",
+            "icon": "https://belifex.com/assets/RupiahToken.png",
+            "primaryColor": "#cd453d",
+            "addresses": {
+                "1": "0x998FFE1E43fAcffb941dc337dD0468d52bA5b48A"
+            },
+            "website": "https://rupiahtoken.com/",
+            "description": "Rupiah Token (IDRT) enables you to use Indonesian Rupiah directly on top of Ethereum & Binance Chain.",
+            "c_id": "idrt"
+        },
+	{
+            "decimals": 0,
+            "symbol": "htx",
+            "name": "HashTrust",
+            "icon": "http://belifex.com/assets/htx.png",
+            "primaryColor": "#EBE8E8",
+            "addresses": {
+                "1": "0xedbcc06b603ea1f512720a4073a62cc4fdefcb86"
+            },
+            "website": "https://hashtrust.io/",
+            "description": "DECENTRALIZED STAKE MINING With the most trusted & accessible POS stake mining platform to date possible thanks to HTX first TOKEN that holds hashing power",
+            "c_id": "htx"
+        },
+	{
+            "decimals": 8,
+            "symbol": "0xbtc",
+            "name": "0xBitcoin Token",
+            "icon": "https://belifex.com/assets/oxbtc.png",
+            "primaryColor": "#2A203C",
+            "addresses": {
+                "1": "0xB6eD7644C69416d67B522e20bC294A9a9B405B31"
+            },
+            "website": "https://0xbitcoin.org/",
+            "description": "0xBTC is a faithful implementation of Bitcoin as a trustless, immutable Ethereum smart contract.",
+            "c_id": "0xbtc"
         }
     ],
     "pairs": [
         {
+            "base": "weth",
+            "quote": "usdc"
+        },
+        {
+            "base": "weth",
+            "quote": "usdt"
+        },
+        {
             "base": "vsf",
-            "quote": "weth",
-            "config": {
-                "basePrecision": 0,
-                "pricePrecision": 8,
-                "minAmount": 10000
-            }
+            "quote": "weth"
+        },
+        {
+            "base": "befx",
+            "quote": "weth"
         },
         {
             "base": "zrx",
-            "quote": "weth",
-            "config": {
-                "basePrecision": 0,
-                "pricePrecision": 7,
-                "minAmount": 1
-            }
+            "quote": "weth"
         },
         {
-            "base": "dgx",
-            "quote": "weth",
-            "config": {
-                "basePrecision": 0,
-                "pricePrecision": 7,
-                "minAmount": 1
-            }
+            "base": "dai",
+            "quote": "weth"
+        },
+        {
+            "base": "mkr",
+            "quote": "weth"
+        },
+        {
+            "base": "bat",
+            "quote": "weth"
+        },
+        {
+            "base": "muxe",
+            "quote": "weth"
+        },
+        {
+            "base": "link",
+            "quote": "weth"
+        },
+	{
+            "base": "idrt",
+            "quote": "weth"
+        },
+        {
+            "base": "clo",
+            "quote": "weth"
+        },
+        {
+            "base": "clog",
+            "quote": "weth"
+        },
+        {
+            "base": "htx",
+            "quote": "weth"
+        },
+        {
+            "base": "0xbtc",
+            "quote": "weth"
+        },
+        {
+            "base": "dca",
+            "quote": "weth"
+        },
+        {
+            "base": "vsf",
+            "quote": "befx"
         },
         {
             "base": "zrx",
-            "quote": "vsf",
-            "config": {
-                "basePrecision": 0,
-                "pricePrecision": 7,
-                "minAmount": 10
-            }
+            "quote": "befx"
+        },
+        {
+            "base": "dai",
+            "quote": "befx"
+        },
+        {
+            "base": "mkr",
+            "quote": "befx"
+        },
+        {
+            "base": "bat",
+            "quote": "befx"
+        },
+        {
+            "base": "muxe",
+            "quote": "befx"
+        },
+        {
+            "base": "link",
+            "quote": "befx"
+        },
+	{
+            "base": "idrt",
+            "quote": "befx"
+        },
+        {
+            "base": "clo",
+            "quote": "befx"
+        },
+        {
+            "base": "clog",
+            "quote": "befx"
+        },
+        {
+            "base": "htx",
+            "quote": "befx"
+        },
+        {
+            "base": "0xbtc",
+            "quote": "befx"
+        },
+        {
+            "base": "dca",
+            "quote": "befx"
+        },
+        {
+            "base": "vsf",
+            "quote": "usdc"
+        },
+        {
+            "base": "zrx",
+            "quote": "usdc"
+        },
+        {
+            "base": "dai",
+            "quote": "usdc"
+        },
+        {
+            "base": "mkr",
+            "quote": "usdc"
+        },
+        {
+            "base": "befx",
+            "quote": "usdc"
+        },
+        {
+            "base": "bat",
+            "quote": "usdc"
+        },
+        {
+            "base": "muxe",
+            "quote": "usdc"
+        },
+        {
+            "base": "link",
+            "quote": "usdc"
+        },
+	{
+            "base": "idrt",
+            "quote": "usdc"
+        },
+        {
+            "base": "clo",
+            "quote": "usdc"
+        },
+        {
+            "base": "clog",
+            "quote": "usdc"
+        },
+        {
+            "base": "0xbtc",
+            "quote": "usdc"
+        },
+        {
+            "base": "dca",
+            "quote": "usdc"
+        },
+        {
+            "base": "vsf",
+            "quote": "usdt"
+        },
+        {
+            "base": "befx",
+            "quote": "usdt"
+        },
+        {
+            "base": "zrx",
+            "quote": "usdt"
+        },
+        {
+            "base": "dai",
+            "quote": "usdt"
+        },
+        {
+            "base": "mkr",
+            "quote": "usdt"
+        },
+        {
+            "base": "bat",
+            "quote": "usdt"
+        },
+        {
+            "base": "muxe",
+            "quote": "usdt"
+        },
+        {
+            "base": "link",
+            "quote": "usdt"
+        },
+	{
+            "base": "idrt",
+            "quote": "usdt"
+        },
+        {
+            "base": "clo",
+            "quote": "usdt"
+        },
+        {
+            "base": "clog",
+            "quote": "usdt"
+        },
+        {
+            "base": "0xbtc",
+            "quote": "usdt"
+        },        
+	{
+            "base": "dca",
+            "quote": "usdt"
         }
+
+
     ],
     "marketFilters": [
+        {
+            "text": "BEFX",
+            "value": "befx"
+        },
         {
             "text": "ETH",
             "value": "weth"
         },
         {
-            "text": "VSF",
-            "value": "vsf"
+            "text": "USDT",
+            "value": "usdt"
+        },
+        {
+            "text": "USDC",
+            "value": "usdc"
         }
     ]
 }
+
+
