@@ -86,9 +86,9 @@ const WalletChooseModalContainer: React.FC<Props> = props => {
         window.open(METAMASK_CHROME_EXTENSION_DOWNLOAD_URL, '_blank');
     };
 
-    const choosePortis = () => {
+    /*const choosePortis = () => {
         chooseWallet(Wallet.Portis);
-    };
+    };*/
     const chooseMetamask = () => {
         chooseWallet(Wallet.Metamask);
     };
@@ -98,9 +98,9 @@ const WalletChooseModalContainer: React.FC<Props> = props => {
     /*const chooseWalletTorus = () => {
         chooseWallet(Wallet.Torus);
     };*/
-    const chooseFortmatic = () => {
+    /*const chooseFortmatic = () => {
         chooseWallet(Wallet.Fortmatic);
-    };
+    };*/
     const clickGetCoinbaseWallet = () => {
         const os = envUtil.getOperatingSystem();
         switch (os) {
@@ -124,10 +124,10 @@ const WalletChooseModalContainer: React.FC<Props> = props => {
     const content = (
         <>
             <ModalTitle>Choose Wallet:</ModalTitle>
-            <ButtonStyled onClick={choosePortis} variant={ButtonVariant.Portis}>
+            {/*<ButtonStyled onClick={choosePortis} variant={ButtonVariant.Portis}>
                 <LinkButton>{'Portis'}</LinkButton>
             </ButtonStyled>
-            <ButtonStyled onClick={chooseFortmatic} variant={ButtonVariant.Fortmatic}>
+            /*<ButtonStyled onClick={chooseFortmatic} variant={ButtonVariant.Fortmatic}>
                 <LinkButton>{'Fortmatic'}</LinkButton>
             </ButtonStyled>
             {/*<ButtonStyled  onClick={chooseWalletTorus} variant={ButtonVariant.Torus}>
@@ -155,7 +155,7 @@ const WalletChooseModalContainer: React.FC<Props> = props => {
                 <>
                     <MobileText>Mobile Wallets With Dapp Browsers:</MobileText>
                     <ButtonTrust onClick={clickGoTrust}>{GetTrustWallet()}</ButtonTrust>
-                    <ButtonCoinbase onClick={clickGetCoinbaseWallet}>{GetCoinbaseWallet()}</ButtonCoinbase>
+                    {/*<ButtonCoinbase onClick={clickGetCoinbaseWallet}>{GetCoinbaseWallet()}</ButtonCoinbase>*/}
                 </>
             ) : (
                 ''
