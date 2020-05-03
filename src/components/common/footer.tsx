@@ -186,47 +186,40 @@ export const Footer: React.FC<Props> = props => {
     return (
         <FooterWrapper title={GIT_COMMIT} {...props}>
             <LinksContainer>
-                {marketplace !== MARKETPLACES.ERC721 && (
-                    <HrefStyled href={`/listed-tokens`} onClick={handleListTokensClick}>
-                        Tokens
-                    </HrefStyled>
-                )}
-                {marketplace !== MARKETPLACES.ERC721 && <Pipe>|</Pipe>}
+                
+                {marketplace !== MARKETPLACES.ERC721 && <Pipe>|||</Pipe>}
                 <HrefStyled
-                    href="https://www.verisafe.io/terms-and-conditions"
+                    href="http://belifex.com/Terms%20and%20Conditions/index.php"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="link"
                 >
                     Terms and Conditions
                 </HrefStyled>
-                <Pipe>|</Pipe>
+                <Pipe>|||</Pipe>
                 <br className="break" />
-                <HrefStyled href="https://www.verisafe.io/privacy-policy" target="_blank" rel="noopener noreferrer">
+                <HrefStyled href="http://belifex.com/Privacy%20Policy/index.php" 
+			target="_blank" 
+			rel="noopener noreferrer">
                     Privacy Policy
+		</HrefStyled>
+                <Pipe>|||</Pipe>
+                <br className="break" />
+                <HrefStyled href="http://belifex.com/Disclaimer/index.php" target="_blank" rel="noopener noreferrer">
+                    Disclaimer
                 </HrefStyled>
-                {marketplace !== MARKETPLACES.ERC721 && <Pipe>|</Pipe>}
+                <Pipe>|||</Pipe>
                 {marketplace !== MARKETPLACES.ERC721 && (
-                    <HrefStyled
-                        href="https://steemit.com/veridex/@joaocampos/tutorial-to-use-veridex-at-dex-verisafe-io-https-dex-verisafe-io"
-                        target="_blank"
+                    <HrefStyled 
+			href="https://dex-belifex.com/listing-page/"
+			target="_blank"
                         rel="noopener noreferrer"
-                    >
-                        Tutorial
+		    >
+                        List Your Project
                     </HrefStyled>
                 )}
-                <Pipe>|</Pipe>
-                {marketplace !== MARKETPLACES.ERC721 && (
-                    <HrefStyled href={`/listings`} onClick={handleListingsClick}>
-                        Listings
-                    </HrefStyled>
-                )}
-                <Pipe>|</Pipe>
-                {marketplace !== MARKETPLACES.ERC721 && (
-                    <HrefStyled href={`/dex-wizard`} onClick={handleDexWizardClick}>
-                        Dex Wizard
-                    </HrefStyled>
-                )}
+                <Pipe>|||</Pipe>
+                
                 {/*<StyledButton onClick={handleThemeClick} className={'theme-switcher-footer'}>
                     {themeName === 'DARK_THEME' ? '☼' : '🌑'}
                 </StyledButton>
