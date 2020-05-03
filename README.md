@@ -1,4 +1,4 @@
-# Veridex
+# DEX
 
 [![Chat with us on Discord](https://img.shields.io/badge/chat-Discord-blueViolet.svg)](https://discord.gg/JqheZms)
 [![CircleCI](https://circleci.com/gh/0xProject/0x-launch-kit-frontend.svg?style=svg)](https://circleci.com/gh/0xProject/0x-launch-kit-frontend)
@@ -8,28 +8,12 @@
 
 This project is forked from [0x-launch-kit-fronted](https://github/0xproject/0x-launch-kit-frontend) and it have a goal to be the most complete open-source 0x based dex out there. The code here will try to be on sync with the 0x frontend, but with the additional features proposed on the TODO, tests will be include following 0x style.
 
-This source code is used on the [VeriSafe Dex as a service](https://steemit.com/zerox/@joaocampos/veridex-network-dex-as-a-service).
 
 This repo ships with both an ERC-20 token trading interface and an ERC-721 marketplace interface. However, for now, only improvements on ERC-20 token trading will be done.
 
-To use this fork the following actions are required:
 
--   Add VSF, 0xbitcoin and 0x as pairs
--   Lets us know you are using this fork
--   Add a Powered by 0x and VeriSafe
--   Don't use another pool associated with this code besides the one on: [Veridex Pool](https://0x.org/zrx/staking/pool/16). If you are market maker you can join Veridex market pool at [Join as Maker](https://dex.verisafe.io/#/erc20/join-as-maker)
 
 With your help, we can be self-sustainable and complete the long list of TODO's. If you want a feature that is not present on the TODO list, please open an issue requesting a feature request.
-
-## Deployed DEX's
-
-List of deployed dex's using this source code:
-
--   [VeriDex](https://dex.verisafe.io)
--   [0xChange](https://0xchange.verisafe.io)
--   [Belifex](https://dex-belifex.com)
-
-If you are using the source code of this fork, please let me know! Help the project adding VSF as a pair on your fork!
 
 If you have the URL of an existing relayer, you can use this frontend against it. After installing the dependencies, start the application with this command, replacing `RELAYER_URL` and `RELAYER_WS_URL` with the proper value:
 
@@ -154,40 +138,4 @@ This is a detailed list of planned features to add to this DEX (includes VeriDex
 -   [x] [TrustWallet](https://trustwallet.com)
 -   [x] [CipherBrowser](https://www.cipherbrowser.com/)
 
-### Using VeriDex relayer
 
-```
-
-REACT_APP_RELAYER_URL='https://dex-backend.verisafe.io/v3' yarn start
-
-```
-
-[VeriDEX OPEN API SPEC](https://verisafe.github.io/veridex-api-spec/)
-
-This relayer has additional endpoints to enable market view data with stats and candles. We will be adding as an opt-in option use these features in your frontend. That way you can use a Standard Relayer without any issues.
-
-## Environment variables
-
-You can create a `.env` file to set environment variables and configure the behavior of the dApp. Start by copying the example file (`cp .env.example .env`) and modify the ones you want. Some things you can configure are:
-
--   `REACT_APP_RELAYER_URL`: The URL of the relayer used by the dApp. Defaults to `http://localhost:3000/v3`
--   `REACT_APP_RELAYER_WS_URL`: The Websocket URL of the relayer used by the dApp. Defaults to `http://localhost:3000/`
--   `REACT_APP_FEE_PERCENTAGE`: The fee percentage amount charged on 0x orders filled via the Forwarder. Note this is limited to `*/WETH` orders for the taker.
--   `REACT_APP_FEE_RECIPIENT`: The address which receives the fees from the Forwarder.
--   `REACT_APP_NETWORK_ID`: The network id to build the front end for. E.g `42` for Kovan, `50` for Ganache
--   `REACT_APP_CHAIN_ID`: The chain id to build the front end for. E.g `42` for Kovan, `1337` for Ganache
--   `REACT_APP_DEFAULT_ORDER_EXPIRY_SECONDS`: The expiration time for an order. Defaults to 1 day.
-
-Check `.env.example` for the full list.
-
-### Using custom themes
-
-If you want to add your own theme for the app, please read the [THEMES.md](THEMES.md) file
-
-### Using custom Config on the DEX
-
-If you want to config the app and markets, please read the [CONFIG.md](CONFIG.md) file
-
-```
-
-```
