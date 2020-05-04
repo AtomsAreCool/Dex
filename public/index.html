@@ -29,17 +29,17 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://trade.dex-belifex.com/">
-    <meta property="og:title" content="Veridex — ERC20 trading, swap, fiat-onramp and market maker tools">
+    <meta property="og:title" content="Belifex Decentralized Exchange — ERC20 trading platform">
     <meta property="og:description" content="Belifex Decentralized Exchange is an ERC20 trading platform. Easy onboarding for new users and no KYC required.">
     <meta property="og:image" content="https://trade.dex-belifex.com/public/assets/belifex_dex.png">
     <meta property="fb:app_id" content="2358774107692244" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://dex.verisafe.io/">
-    <meta property="twitter:title" content="Veridex — ERC20 trading, swap, fiat-onramp and market maker tools">
-    <meta property="twitter:description" content="Veridex is an open-source decentralized ERC20  trading, swap, wallet, and launchpad platform with market maker tools and integrated fiat-onramp. Easy onboarding for new users and no KYC required.">
-    <meta property="twitter:image" content="https://dex.verisafe.io/assets/veridex.png">
+    <meta property="twitter:url" content="https://trade.dex-belifex.com/">
+    <meta property="twitter:title" content="Belifex Decentralized Exchange — ERC20 trading platform">
+    <meta property="twitter:description" content="Belifex Decentralized Exchange is an ERC20 trading platform. Easy onboarding for new users and no KYC required.">
+    <meta property="twitter:image" content="https://trade.dex-belifex.com/public/assets/belifex_dex.png">
 
     <meta name="keywords" content="dex,decentralized exchange,erc20,cryptocurrency trading,0xproject,ethereum,altcoins,lending,funding,margin,loans">
 
@@ -335,16 +335,212 @@
               
             </div>
             <div class="loading-text">
-                <p style="color: white"><strong> VeriDex Loading...</strong> </p>
+                <p style="color: white"><strong>Belifex Decentralized Exchange is Loading...</strong> </p>
             </div>
            
           </div>
     </div>
+      <style>
+
+    /* Style the tab */
+    .tab {
+        overflow: hidden;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        background-color: transparent;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        color: white;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+        border-bottom: 2px solid white;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: none;
+        -webkit-animation: fadeEffect 1s;
+        animation: fadeEffect 1s;
+    }
+    .tablinks{
+        width: 100%;
+        border: 0;
+    }
+    #widgetBinance{}
+    #widgetBinance .binance-fiat-widget{
+        margin: 0 auto;
+    }
+
+    /* Fade in tabs */
+    @-webkit-keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    .full-height{height: 100%;}
+    .full-width{width: 100%;}
+    .bm_payment_dialog{ margin: 0 auto; top: 2%;  position: relative;  border: 1px solid rgb(0, 0, 0); background: rgb(74, 28, 77); overflow: hidden; overflow-y: auto; border-radius: 4px; outline: none; padding: 16px; display: flex; flex-direction: column; flex-grow: 0;min-height: 95%; width: 550px;}
+    @media screen AND (max-width: 550px){
+        .bm_payment_dialog{width: 100%;}
+    }
+</style>
+<script src="https://public.bnbstatic.com/static/js/ocbs/binance-fiat-widget.js"></script>
+<div class="full-width center binanceRoot" style="display: none; position: fixed; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.1);z-index: 99999;">
+    <div class="bm_payment_dialog">
+        <div style="display: flex;    -webkit-box-pack: end;    -webkit-justify-content: flex-end;    -ms-flex-pack: end;    justify-content: flex-end;" class="full-width closeRoot" onclick="function f() {
+          document.getElementsByClassName('sc-htpNat')[0].click();
+        } f()"></div>
+        <div class="full-width full-height ">
+            <div class="full-height full-width" style="position: relative;">
+                <div class="tab" style="display: flex; height: 50px;">
+                    <button class="tablinks" onclick="openTab(event, 'Binance')" id="defaultOpen">Binance</button>
+                    <button class="tablinks" onclick="openTab(event, 'MoonPay')">MoonPay</button>
+                </div>
+
+                <div id="Binance" class="tabcontent center" style="top: 50px;">
+                    <div class="full-width full-height" style="display: table;">
+                        <div style="display: table-cell; vertical-align: middle;">
+                            <div id="widgetBinance" class="center"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="MoonPay" class="tabcontent" style="top: 50px;">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var t = document.querySelector('#widgetBinance');
+    window.binanceFiatWidget.Widget(t, {
+        locale: 'en',
+        width: '100%',
+        urlParmas: {
+            ref: '35652020'
+        }
+    });
+</script>
+
+<script>
+    let fr=true;
+    let counter=0;
+    let class_name = '';
+    function RunTimer() {
+        let elements=document.getElementsByClassName('ReactModalPortal');
+        for(let i=0;i<elements.length;i++)
+            if(elements[i].childElementCount > 0) {
+                let el_root = elements[i];
+
+                let defined_index = 0;
+                if (el_root.getElementsByClassName('sc-eXNvrr')[0] !== undefined) {
+                    defined_index = 1;
+                    class_name = 'sc-eXNvrr';
+                } else if (el_root.getElementsByClassName('sc-itybZL')[0] !== undefined) {
+                    defined_index = 2;
+                    class_name = 'sc-itybZL';
+                }else
+                    continue;
+
+                if (document.getElementsByClassName('binanceRoot')[0].style.display === 'none') {
+                    document.getElementsByClassName('binanceRoot')[0].style.display = 'block';
+                    document.getElementById('defaultOpen').click();
+
+                    if (fr) {
+                        let page2 = el_root.getElementsByClassName(class_name)[0].innerHTML;
+                        document.getElementsByClassName('closeRoot')[0].innerHTML = el_root.getElementsByClassName('sc-htpNat')[0].innerHTML;
+                        document.getElementById('MoonPay').innerHTML = page2;
+                        document.getElementsByClassName('closeRoot')[0].style.cursor = 'pointer';
+                        try {
+                            let title_class = 'sc-cpmKsF';
+                            if (defined_index === 2) {
+                                title_class = 'sc-eMigcr';
+                                el_root.getElementsByClassName(title_class)[0].style.display = 'none';
+                                el_root.getElementsByClassName('sc-bHwgHz')[0].style.display = 'none';
+                            } else {
+                                el_root.getElementsByClassName(title_class)[0].style.display = 'none';
+                                el_root.getElementsByClassName('sc-eMigcr')[0].style.display = 'none';
+                            }
+
+                        } catch (e) {
+
+                        }
+
+                        document.getElementsByClassName('binance-fiat-widget')[0].style.boxShadow = 'none';
+                        document.getElementsByClassName('binance-fiat-widget')[0].getElementsByTagName('div')[0].style.color = '#fff';
+                    }
+
+                    fr = false;
+                } else {
+                    counter++;
+                    if (counter === 3)
+                        counter = 0;
+                    if (counter === 0) {
+                        let page2r = el_root.getElementsByClassName(class_name)[0].innerHTML;
+                        let moonpay = document.getElementById('MoonPay').innerHTML;
+                        if (page2r.trim() !== moonpay.trim())
+                            document.getElementById('MoonPay').innerHTML = page2r;
+                    }
+                }
+            }
+
+        if (class_name.trim() !== '' && document.getElementsByClassName(class_name)[0] === undefined) {
+            if (document.getElementsByClassName('binanceRoot')[0].style.display === 'block')
+                document.getElementsByClassName('binanceRoot')[0].style.display = 'none';
+        }
+        setTimeout(function () {
+            RunTimer();
+        }, 200);
+    }
+</script>
+<script>
+    function openTab(evt, Name) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(Name).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+<script>
+    window.onload=function () {
+        RunTimer();
+    };
+</script>
   </body>
   <script id="chatBroEmbedCode">
       /* Chatbro Widget Embed Code Start */
       function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','//www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}
       /* Chatbro Widget Embed Code End */
-      ChatbroLoader({encodedChatId: '43oXy'});
+      ChatbroLoader({encodedChatId: '44c7s'});
   </script>
 </html>
