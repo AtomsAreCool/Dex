@@ -116,7 +116,7 @@ export const MobileWalletConnectionContent = () => {
             <ListContainer>
                 <ListItem onClick={onGoToHome}>Home</ListItem>
                 <ListItem onClick={onGoToWallet}>Wallet</ListItem>
-                <ListItem onClick={onGoToMarketTrade}>Market Trade</ListItem>
+                {/*<ListItem onClick={onGoToMarketTrade}>Market Trade</ListItem>
                 <ListItem onClick={onGoToLaunchpad}>Launchpad</ListItem>
                 {/*<ListItem onClick={onGoToMarginLend}>Lend</ListItem>*/}
                 <hr />
@@ -136,7 +136,7 @@ export const MobileWalletConnectionContent = () => {
                 <ListItem onClick={handleThemeClick}>{themeName === 'DARK_THEME' ? '☼' : '🌑'}</ListItem>
                 <ListItem onClick={viewAccountExplorer}>View Address on Etherscan</ListItem>
                 <ListItem onClick={connectToExplorer}>Track DEX volume</ListItem>
-                <ListItem onClick={openFabrx}>Set Alerts</ListItem>
+                {/*<ListItem onClick={openFabrx}>Set Alerts</ListItem>*/}
                 <ListItem onClick={onLogoutWallet}>Logout Wallet</ListItem>
             </ListContainer>
         </MenuContainer>
