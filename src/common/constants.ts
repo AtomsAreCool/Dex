@@ -21,9 +21,9 @@ export const RELAYER_URL = process.env.REACT_APP_RELAYER_URL || 'http://localhos
 
 export const RELAYER_WS_URL = process.env.REACT_APP_RELAYER_WS_URL || 'ws://localhost:3001';
 
-export const RPC_URL = process.env.REACT_APP_RPC_URL || 'https://eth.dex-belifex.com/';
+export const RPC_URL = process.env.REACT_APP_RPC_URL || '';
 
-export const INFURA_ID = process.env.REACT_APP_INFURA_ID || '1318811932884c5ca6da918c73007efa';
+export const INFURA_ID = process.env.REACT_APP_INFURA_ID || '';
 
 export const TX_DEFAULTS = {
     gas: 1000000,
@@ -81,14 +81,14 @@ export const UI_DECIMALS_DISPLAYED_SPREAD_PERCENT = 2;
 export const UI_DECIMALS_DISPLAYED_DEFAULT_PRECISION = 2;
 export const UI_DECIMALS_DISPLAYED_ORDER_SIZE = 0;
 export const UI_DECIMALS_DISPLAYED_PRICE_ETH = 7;
-export const UI_GENERAL_TITLE = 'VeriDex';
+export const UI_GENERAL_TITLE = 'Belifex Decentralized Exchange';
 
 export const METAMASK_EXTENSION_URL = 'https://metamask.io/';
 export const METAMASK_CHROME_EXTENSION_DOWNLOAD_URL =
     'https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn';
 
-export const PORTIS_APP_ID = process.env.REACT_APP_PORTIS_APP_ID;
-export const FORTMATIC_APP_ID = process.env.REACT_APP_FORTMATIC_APP_ID;
+export const PORTIS_APP_ID = process.env.REACT_APP_PORTIS_APP_ID || '';
+export const FORTMATIC_APP_ID = process.env.REACT_APP_FORTMATIC_APP_ID || '';
 
 export const COINDIRECT_MERCHANT_ID = process.env.REACT_APP_COINDIRECT_MERCHANT_ID || '';
 
