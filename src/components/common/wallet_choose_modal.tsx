@@ -98,9 +98,9 @@ const WalletChooseModalContainer: React.FC<Props> = props => {
     /*const chooseWalletTorus = () => {
         chooseWallet(Wallet.Torus);
     };*/
-    /*const chooseFortmatic = () => {
+    const chooseFortmatic = () => {
         chooseWallet(Wallet.Fortmatic);
-    };*/
+    };
     const clickGetCoinbaseWallet = () => {
         const os = envUtil.getOperatingSystem();
         switch (os) {
@@ -126,8 +126,8 @@ const WalletChooseModalContainer: React.FC<Props> = props => {
             <ModalTitle>Choose Wallet:</ModalTitle>
             {/*<ButtonStyled onClick={choosePortis} variant={ButtonVariant.Portis}>
                 <LinkButton>{'Portis'}</LinkButton>
-            </ButtonStyled>
-            /*<ButtonStyled onClick={chooseFortmatic} variant={ButtonVariant.Fortmatic}>
+            </ButtonStyled>*/}
+            <ButtonStyled onClick={chooseFortmatic} variant={ButtonVariant.Fortmatic}>
                 <LinkButton>{'Fortmatic'}</LinkButton>
             </ButtonStyled>
             {/*<ButtonStyled  onClick={chooseWalletTorus} variant={ButtonVariant.Torus}>
