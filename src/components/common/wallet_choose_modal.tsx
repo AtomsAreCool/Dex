@@ -86,9 +86,9 @@ const WalletChooseModalContainer: React.FC<Props> = props => {
         window.open(METAMASK_CHROME_EXTENSION_DOWNLOAD_URL, '_blank');
     };
 
-    /*const choosePortis = () => {
+    const choosePortis = () => {
         chooseWallet(Wallet.Portis);
-    };*/
+    };
     const chooseMetamask = () => {
         chooseWallet(Wallet.Metamask);
     };
@@ -124,9 +124,9 @@ const WalletChooseModalContainer: React.FC<Props> = props => {
     const content = (
         <>
             <ModalTitle>Choose Wallet:</ModalTitle>
-            {/*<ButtonStyled onClick={choosePortis} variant={ButtonVariant.Portis}>
+            <ButtonStyled onClick={choosePortis} variant={ButtonVariant.Portis}>
                 <LinkButton>{'Portis'}</LinkButton>
-            </ButtonStyled>*/}
+            </ButtonStyled>
             <ButtonStyled onClick={chooseFortmatic} variant={ButtonVariant.Fortmatic}>
                 <LinkButton>{'Fortmatic'}</LinkButton>
             </ButtonStyled>
