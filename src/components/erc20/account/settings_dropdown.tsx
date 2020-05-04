@@ -8,7 +8,6 @@ import {
     setERC20Layout,
     setERC20Theme,
     setThemeName,
-    setTour,
 } from '../../../store/actions';
 import { getDynamicLayout, getERC20Layout, getThemeName } from '../../../store/selectors';
 import { getThemeFromConfigDex } from '../../../themes/theme_meta_data_utils';
@@ -41,7 +40,7 @@ const DropdownBody = styled(CardBase)`
     max-height: 100%;
     max-width: 100%;
     width: 190px;
-    height: 280px;
+    height: 260px;
 `;
 const DropdownWrapper = styled(Dropdown)`
     z-index: 100;
@@ -221,9 +220,6 @@ export const SettingsDropdownContainer = (props: any) => {
         mutateLayoutsByReference(layouts, !isMarketFills, 'g');
         dispatch(setERC20Layout(JSON.stringify(layouts)));
     };
-    const handleTour: React.EventHandler<React.MouseEvent> = e => {
-        dispatch(setTour(true));
-    };
     /*const on0xLastTradesChecked = () => {
         set0xLastTrades(!is0xLastTrades);
         mutateLayoutsByReference(layouts, !is0xLastTrades, 'h');
@@ -238,13 +234,12 @@ export const SettingsDropdownContainer = (props: any) => {
                     style={{ textAlign: 'center' }}
                     text={themeName === 'DARK_THEME' ? ' ☼' : ' ☾'}
                 />
-                <DropdownTextItem onClick={handleWizardClick} style={{ textAlign: 'center' }} text={'Wizard'} />
+                
                 <DropdownTextItem
                     onClick={onDynamicLayout}
                     style={{ textAlign: 'center' }}
                     text={isDynamicLayout ? 'Dynamic Layout' : 'Static Layout'}
                 />
-                <DropdownTextItem onClick={handleTour} style={{ textAlign: 'center' }} text={'Take Tour'} />
                 <LabelContainer>
                     <Label>Markets List</Label>
                     <FieldContainer>
@@ -312,3 +307,4 @@ export const SettingsDropdownContainer = (props: any) => {
         />
     );
 };
+
