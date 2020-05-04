@@ -46,7 +46,7 @@ export const ZERO = new BigNumber(0);
 
 export const MIN_ORDER_EXPIRATION_TIME_ON_ORDERBOOK = 60;
 
-export const VERIDEX_ORIGIN = process.env.REACT_APP_VERIDEX_ORIGIN || 'http://localhost:3001';
+export const VERIDEX_ORIGIN = process.env.REACT_APP_VERIDEX_ORIGIN || 'https://trade.dex-belifex.com';
 
 export const FEE_RECIPIENT = process.env.REACT_APP_FEE_RECIPIENT || ZERO_ADDRESS;
 export const AFFILIATE_FEE_PERCENTAGE: number = process.env.REACT_APP_AFFILIATE_FEE_PERCENTAGE
@@ -131,7 +131,7 @@ export const GIT_COMMIT: string = process.env.REACT_APP_GIT_COMMIT || '';
 
 export const START_BLOCK_LIMIT: number = Number.parseInt(process.env.REACT_APP_START_BLOCK_LIMIT as string, 10) || 1000;
 
-export const LOGGER_ID: string = process.env.REACT_APP_LOGGER_ID || 'veridex';
+export const LOGGER_ID: string = process.env.REACT_APP_LOGGER_ID || 'belifex';
 
 export const ERC20_THEME_NAME: string = process.env.REACT_APP_ERC20_THEME_NAME || 'DARK_THEME';
 
